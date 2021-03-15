@@ -14,7 +14,7 @@ body {
   min-height: 90vh;
   padding: 2rem;
   margin: 2px;
-  background-color:aquamarine;
+  background-color: aquamarine;
   border: 1px solid black;
 }
 
@@ -26,28 +26,43 @@ body {
   display: grid;
   grid-template-columns: 10% auto 10%;
   grid-template-rows: 9fr 1fr;
-  grid-template-areas: 
-  'left picture right'
-  'circles circles circles';
+  grid-gap: 0.5rem;
+  grid-template-areas:
+    "left picture right"
+    "circles circles circles";
 }
 
 #left {
-    grid-area: left;
-    border: 1px solid black;
+  grid-area: left;
+  border: 1px solid black;
 }
 
 #right {
-    grid-area: right;
-    border: 1px solid black;
+  grid-area: right;
+  border: 1px solid black;
 }
 
 #pic {
-    grid-area: picture;
-    border: 1px solid black;
+  grid-area: picture;
+  border: 1px solid black;
 }
 
 #circle {
-    grid-area: circles;
-    border: 1px solid black;
+  grid-area: circles;
+  border: 1px solid black;
 }
 
+#circle > i {
+    margin: 0.2rem;
+}
+
+#wrapper > div,
+#actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
