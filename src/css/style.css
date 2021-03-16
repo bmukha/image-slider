@@ -35,6 +35,7 @@ body {
 #left {
   grid-area: left;
   border: 1px solid black;
+  /* color: grey; */
 }
 
 #right {
@@ -45,6 +46,10 @@ body {
 #pic {
   grid-area: picture;
   border: 1px solid black;
+}
+
+#pic > img {
+  display: none;
 }
 
 #circle {
