@@ -34,30 +34,30 @@ body {
 
 #left {
   grid-area: left;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* color: grey; */
 }
 
 #right {
   grid-area: right;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 #pic {
   grid-area: picture;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 #pic > img {
   display: none;
 }
 
-#circle {
+#circles {
   grid-area: circles;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
-#circle > i {
+#circles > i {
     margin: 0.2rem;
 }
 
