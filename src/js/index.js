@@ -14,6 +14,12 @@ right.addEventListener("click", () => {
     renderPicture(getCurrentElement() + 1);
 });
 
+circles.forEach((circle) =>
+  circle.addEventListener("click", (event) => {
+    renderPicture(circles.findIndex((circle) => circle == event.target));
+  })
+);
+
 const initPage = () => {
   renderPicture(0);
 };
@@ -29,9 +35,13 @@ const renderPicture = (element) => {
     }
   });
   circles[element].classList.add("fas");
-  
 };
 
 initPage();
-
-console.log(getCurrentElement());
+setInterval(() => {
+  if (getCurrentElement() < images.length - 1) {
+    renderPicture(getCurrentElement() + 1);
+  } else {
+    renderPicture(0);
+  }
+}, 5000);
